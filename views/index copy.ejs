@@ -1,0 +1,17 @@
+<%- include('header.ejs') %>
+  <h2>쓰기페이지 ------</h2>
+  
+  <form action="/add" method="post">
+    <label>
+      <span>할일입력 :</span>
+      <input type="text" name="title" class="title" placeholder="할일입력" required>
+    </label>
+    <label>
+      종료예정일 :
+      <input type="date" name="dateOfGoals" required>
+    </label>
+    <button class="submitBtn">등록</button>
+  </form>
+
+<%- include('footer.ejs') %>
+
